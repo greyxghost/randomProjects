@@ -1,0 +1,55 @@
+**This is my first school project using JavaScript and gridlayout**
+All future designs will use flexbox more than likely.
+
+# BMW E30 Project - School Project
+This project is a simple website showcasing the BMW E30 models, with information about the brand’s history, model specifications, and design features. 
+It has a basic interactive function: a slideshow on the "About" page. 
+This project helped me practice essential HTML, CSS, and JavaScript skills in a real-world setting.
+
+## Project Overview
+This multi-page website contains:
+- Home Page: Brief overview of BMW E30 models.
+- Models Page: Detailed table listing various BMW models, their specifications, and key features.
+- About Page: Description of a BMW model and an interactive slideshow.
+- Resources Page: Links to the resources and images used in the project.
+
+## Technologies Used
+- HTML: Structuring content across multiple pages.
+- CSS: Styling the pages with custom colors and layouts, including responsive design for mobile compatibility.
+- JavaScript: Basic slideshow functionality on the "About" page, allowing users to view different images.
+
+## Features
+1. Responsive Design: The website is optimized for various screen sizes, ensuring usability on desktop, tablet, and mobile devices. (Still in the process of learning this more with flexbox)
+2. Slideshow on About Page: Users can navigate through a series of images related to the BMW 325i model using arrows, allowing for an interactive browsing experience.
+3. Model Table on Models Page: Organized table that displays key details about each BMW model.
+
+## How to Use
+To view the website:
+1. Download or clone this repository to your local machine.
+2. Open `mainIndex.html` in a web browser to start exploring the site.
+
+To make modifications:
+1. Edit the HTML files in the root directory.
+2. Adjust styling by modifying the CSS files in the `Style/` folder.
+3. Update slideshow functionality or add new JavaScript functions in `script.js` located in the `script/` folder.
+
+## Files and Structure
+- `mainIndex.html`: The homepage with general BMW E30 information.
+- `models.html`: Lists various models with images and specifications.
+- `about.html`: Detailed description of a BMW model and a slideshow feature.
+- `resources.html`: Links to resources and images used.
+- `Style/`: Folder containing CSS files for each page.
+- `script/`: Folder containing `script.js` for JavaScript functionality.
+
+## Credits
+
+- All images used in this project are sourced from Unsplash and Iconfinder. 
+  They are used under fair use for educational purposes only, as this project is intended to showcase my web development skills as part of a school assignment.
+
+- This website is non-commercial, and no profit will be made from its contents.
+
+- Details on specific image sources can be found on the "Resources" page.
+
+---
+
+Thank you for checking out my project! As my first school project with JavaScript, this site is a stepping stone in developing my web development skills.
