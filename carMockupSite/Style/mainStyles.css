@@ -1,0 +1,239 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bmwblue: #0166b1;
+  --bmwgrey: #6F6F6F;
+  --baseblack: black;
+  --basewhite: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+  gap: 0;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 20px;
+}
+
+body {
+  background-image: linear-gradient(var(--bmwgrey), var(--baseblack), var(--bmwgrey));
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  grid-area: header;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nav {
+  grid-area: nav;
+  padding: 10px 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 55px;
+  background-color: var(--baseblack);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  padding: 3px 20px 0;
+  color: var(--basewhite);
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: var(--bmwgrey);
+}
+
+.nav li {
+  margin-right: 10px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.main {
+  grid-area: main;
+  margin: 0;
+}
+
+.section1, .section2, .section3 {
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+}
+
+.section1 {
+  background: url("../Images/bmwfronton1juan-manuel-sanchez.jpg") no-repeat center center fixed;
+}
+
+.section2 {
+  background: url("../Images/BMWSIDEjuan-manuel-sanchez.png") no-repeat center center fixed;
+}
+
+.section3 {
+  background: url("../Images/BMWhayes-potter.jpg") no-repeat center center fixed;
+}
+
+.section1-text, .section2-text, .section3-text {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.section1-text, .section2-text, .section3-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section1-text p, .section2-text p, .section3-text p {
+  font-size: 25px;
+}
+
+footer {
+  grid-area: footer;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+footer .social-icons {
+  margin-bottom: 20px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer .social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+footer .company-info p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+footer .footer-links {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+footer .footer-links a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.emailformcontainer {
+  margin-top: 30px; 
+  margin-bottom: 40px; 
+  letter-spacing: 4px; 
+}
+
+.emailformcontainer h2 {
+  margin-bottom: 10px;
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design for Tablets and Small Laptops (600px to 1024px) */
+@media (max-width: 1024px) {
+  .nav a {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .section1, .section2, .section3 {
+    height: 400px;
+  }
+
+  .section1-text, .section2-text, .section3-text {
+    font-size: 28px;
+    padding: 15px;
+  }
+}
+
+/* Responsive Design for Mobile Phones (up to 600px wide) */
+@media (max-width: 600px) {
+  .nav a {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .section1, .section2, .section3 {
+    height: 250px;
+  }
+
+  .section1-text, .section2-text, .section3-text {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  footer .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,273 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bmwblue: #0166b1;
+  --bmwgrey: #6F6F6F;
+  --baseblack: black;
+  --basewhite: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+  gap: 0;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 20px;
+}
+
+body {
+  background-image: linear-gradient(var(--bmwgrey), var(--baseblack), var(--bmwgrey));
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  grid-area: header;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nav {
+  grid-area: nav;
+  padding: 10px 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 55px;
+  background-color: var(--baseblack);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  padding: 3px 20px 0;
+  color: var(--basewhite);
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: var(--bmwgrey);
+}
+
+.nav li {
+  margin-right: 10px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.audio-container audio {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.audio-container h3 {
+  color: var(--basewhite);
+  text-align: center;
+}
+
+.main {
+  grid-area: main;
+  margin: 0 auto;
+  display: grid;
+  width: 1000px;
+  height: 1100px;
+  padding-top: 50px;
+}
+
+.textbox {
+  width: 500px;
+  height: 620px;
+  float: left;
+  text-align: left;
+  color: var(--basewhite);
+  font-size: 29px;
+  margin-left: 80px;
+  margin-bottom: 47px;
+}
+
+.imagebox {
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 80px;
+  background-color: red;
+}
+
+figcaption {
+  font-size: 12px;
+  color: white;
+}
+
+.historyvideo {
+  width: 560px;
+  height: 315px;
+  background-color: red;
+  clear: both;
+  margin: 0 auto;
+}
+
+footer {
+  grid-area: footer;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 140px;
+}
+
+footer .social-icons {
+  margin-bottom: 20px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer .social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+footer .company-info p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+footer .footer-links {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+footer .footer-links a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.emailformcontainer {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+}
+
+.emailformcontainer h2 {
+  margin-bottom: 10px;
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease-in forwards; /* 2 seconds duration */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design for Tablets and Small Laptops (600px to 1024px) */
+@media (max-width: 1024px) {
+  .nav a {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .textbox {
+    width: 400px;
+    font-size: 25px;
+    margin-left: 50px;
+  }
+
+  .imagebox {
+    width: 250px;
+    height: 250px;
+    margin-right: 50px;
+  }
+  
+  .historyvideo {
+    width: 460px;
+    height: 260px;
+  }
+
+  .audio-container audio {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav a {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .textbox {
+    width: 300px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .imagebox {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+
+  .historyvideo {
+    width: 320px;
+    height: 180px;
+  }
+
+  footer .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .audio-container audio {
+    width: 250px;
+  }
+}

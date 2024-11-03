@@ -1,0 +1,114 @@
+<!--Author: Christopher Meadus-->
+<!--Date: September 24, 2024-->
+<!--QAP 1 - Software Developer Course Assessment Quantitative Assessment Practice-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QAP 1 - Software Developer Course Assessment Quantitative Assessment Practice</title>
+    <link rel="stylesheet" href="Style/aboutStyles.css">
+</head>
+<body class="fadeIn">
+    <div class="grid-container">
+
+        <div class="header">
+            <div class="headerlogo fadeIn">
+                <img src="Images/BMWLogo.png" alt="BMW logo, featuring a circular black border with the letters B, M, and W in white, and a central emblem divided into four quadrants colored blue and white." width="150">
+            </div>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="mainindex.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <main>
+                <div class="textbox">
+                    <p>
+                        The 1990 BMW 325i 4-door sedan is a classic, blending performance and <br> practicality with a manual 5-speed transmission. 
+                        Powered by a 170-horsepower <br> inline 6-cylinder engine, it delivers a satisfying rear-wheel-drive experience. <br>
+                        With a top speed of 196 km/h (122 mph) and an acceleration from 0 to 100 km/h <br> in 9 seconds, 
+                        this car embodies the balanced performance expected from BMW’s <br> iconic 3 Series.
+                        On the road, it offers respectable fuel efficiency for its time <br> —8.5 L/100 km (28 MPG US) 
+                        on the highway and 11.8 L/100 km (20 MPG US) <br> in the city. The 64-liter fuel tank ensures decent range, 
+                        making it practical <br> for both city commutes and longer drives. 
+                        The 325i’s combination of sporty <br> handling and everyday usability makes it a 
+                        standout choice for driving enthusiasts <br> who appreciate the feel of a classic manual sedan.
+                    </p>
+                </div>
+
+                <div class="slideshow-container">
+                    
+                    <div class="mySlides fade">
+                        <img src="Images/BMWSSjulian-hochgesang.jpg" alt="BMW car parked, side view, by Julian Hochgesang" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="Images/BMWSSchristian-velitchkov.jpg" alt="BMW front angle view by Christian Velitchkov" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="Images/BMWSShayes-potter.jpg" alt="BMW driving through urban area by Hayes Potter" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="Images/BMWSSoleksandr-horbach.jpg" alt="BMW city street view by Oleksandr Horbach" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="Images/BMWSSarchee-lal.jpg" alt="BMW on a road trip by Archee Lal" style="width:100%">
+                    </div>
+
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="site-footer">
+            <div class="social-icons">
+                <a href="#"><img src="Images/socialMediaIcons/facebook.png" alt="Facebook icon"></a>
+                <a href="#"><img src="Images/socialMediaIcons/instagram.png" alt="Instagram icon"></a>
+                <a href="#"><img src="Images/socialMediaIcons/twitter.png" alt="Twitter icon"></a>
+                <a href="#"><img src="Images/socialMediaIcons/linkedin.png" alt="LinkedIn icon"></a>
+            </div>
+            <div class="emailformcontainer">
+                <h2><span class="footerred">Subscribe</span> to our newsletter</h2>
+                <form action="submit-email.php" method="post">
+                    <label for="email">Email Address</label> 
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required> 
+                    <input type="submit"> 
+                </form>
+            </div> 
+            <div class="footer-links">
+                <a href="#">Legal Stuff</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Security</a>
+                <a href="#">Website Accessibility</a>
+                <a href="#">Manage Cookies</a>
+            </div>
+            <div class="company-info">
+                <p>Copyright © 2024 CM-SD12</p>
+            </div>
+          </footer>
+
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

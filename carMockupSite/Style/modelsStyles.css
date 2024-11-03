@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bmwblue: #0166b1;
+  --bmwgrey: #6F6F6F;
+  --baseblack: black;
+  --basewhite: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "main main main main main main"
+      "footer footer footer footer footer footer";
+  gap: 0;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 20px;
+}
+
+body {
+  background-image: linear-gradient(var(--bmwgrey), var(--baseblack), var(--bmwgrey));
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  grid-area: header;
+  height: 150px;
+  margin: 20px 0;
+}
+
+.nav {
+  grid-area: nav;
+  padding: 10px 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 55px;
+  background-color: var(--baseblack);
+  margin-bottom: 30px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  padding: 3px 20px 0;
+  color: var(--basewhite);
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: var(--bmwgrey);
+}
+
+
+.nav li {
+  margin-right: 10px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.main {
+  grid-area: main;
+  margin-top: 2px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.modelsimage1 {
+  width: 400px;
+  height: 500px;
+  background-color: red;
+  margin-left: 305px;
+  float: left;
+}
+
+.modelstext {
+  width: 450px;
+  height: 450px;
+  float: right;
+  margin-right: 255px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.modelstext h1 {
+  font-size: 80px;
+  color: white;
+}
+
+.modelsimage2 {
+  width: 400px;
+  float: right;
+  margin-right: 305px;
+}
+
+.modelstext2 {
+  width: 450px;
+  height: 500px;
+  float: left;
+  text-align: right;
+  margin-left: 255px;
+  margin-top: 85px;
+}
+
+.modelstext2 h1 {
+  font-size: 80px;
+  color: white;
+  text-align: right;
+}
+
+.modeltable {
+  border: solid 2px white;
+  color: white;
+  width: 700px;
+  border-collapse: collapse;
+  
+}
+
+.modeltable th, .modeltable td {
+  border: 1px solid white; /* Adds borders to individual cells */
+  padding: 8px; /* Adds space inside cells */
+}
+
+
+.tablecontainer {
+  width: 834px;
+  height: 400px;
+  margin: 0 auto;
+  clear: both;
+  overflow-y: scroll; 
+  margin: 0 auto; 
+  border: 2px solid white; 
+  background-color: var(--bmwgrey); 
+}
+
+.tabletitle {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--basewhite);
+  position: relative; 
+  text-align: center;
+}
+
+
+footer {
+  grid-area: footer;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+footer .social-icons {
+  margin-bottom: 20px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer .social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+footer .company-info p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+footer .footer-links {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+footer .footer-links a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.emailformcontainer {
+  margin-top: 30px; 
+  margin-bottom: 40px; 
+  letter-spacing: 4px; 
+}
+
+.emailformcontainer h2 {
+  margin-bottom: 10px;
+}
+
+
+.fadeIn {
+  animation: fadeIn 2s ease-in forwards; /* 2 seconds duration */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav a {
+      font-size: 20px; 
+      padding: 8px; 
+  }
+}
+
