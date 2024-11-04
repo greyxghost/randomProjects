@@ -1,0 +1,39 @@
+#game {
+    width: 300px;
+    height: auto;
+    background-color: grey;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#guess {
+    width: 120px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#submitGuess {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 2px solid black;
+}
+
+p, h2 {
+    margin: 10px 0; 
+}
+
+#attempts {
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    padding: 0; 
+    line-height: 30px; 
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
