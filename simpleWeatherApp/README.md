@@ -25,11 +25,3 @@ A simple weather application that allows users to search for current weather inf
 ## Open the app
 1. Open index.html in your browser to use the app locally.
 
-## Folder Structure
-weather-app/
-├── index.html        # Main HTML file
-├── style.css         # CSS for styling the app
-├── weather.js        # JavaScript for weather data
-└── README.md         # Project documentation
-
-
